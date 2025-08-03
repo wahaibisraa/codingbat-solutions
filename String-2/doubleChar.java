@@ -1,5 +1,7 @@
-public String doubleChar(String str) {
-        StringBuilder sb = new StringBuilder();
-        for (char c : str.toCharArray()) sb.append(c).append(c);
-        return sb.toString();
+ public String doubleChar(String str) {
+    StringBuilder result = new StringBuilder();
+    for (int i = 0; i < str.length(); i++) {
+      result.append(str.charAt(i)).append(str.charAt(i));
     }
+    return result.toString();
+  }
